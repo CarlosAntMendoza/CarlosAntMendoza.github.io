@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- 
+    Nombre: Ivan Ros Padilla
+    Materia: Programacion Web I
+    Fecha: 08/05/2023
+    Descripcion: Tareas Modulo No.4
+-->
+<html>
+    <head>
+       <title>Unidad 03 - Ejercicio 06</title>
+       <meta charset="utf-8">
+       <meta name="author" content="Ivan Ros Padilla">
+       <meta name="revised" content="Lunes 8 de mayo de 2023">
+       <meta name="description" content="">
+       <style>
+            .Tit{background-color: black; color: aqua;}
+       </style>
+    </head>
+    <body>
+        <hgroup>
+            <h1>Javascript - Condicionales</h1>
+            <script>
+                /* 4.1.1.11 Tareas: Condicionales*/
+                let varNum = prompt("Introduce el valor para jugar...","10");
+                varNum=varNum?varNum:0;
+                /* Tarea No.1 */
+                if(varNum>=90&&varNum<=110){
+                    alert("¡Bingo!");
+                }else{
+                    alert("¡Fallaste!");
+                }
+                /* Tarea No.2 */
+                let varRes = (varNum>=90)?(varNum<=110)?"¡Loteria!":"¡Perdiste; te pasaste!":"¡Perdiste; te falto!";
+                alert(varRes);
+                /* Tarea No.3 */
+                let varNum1=prompt("Primer operando: ");
+                let varNum2=prompt("Segundo operando: ");
+                let varOp=prompt("Operacion: ");
+
+                varNum1=Number.parseInt(varNum1,10);
+                varNum2=Number.parseInt(varNum2,10);
+
+                let varRes1="";
+
+                if (!Number.isNaN(varNum1) && !Number.isNaN(varNum2)){
+                    switch(varOp){
+                        case "+":varRes1="El resultado de "+varNum1+" + "+varNum2+ " es: "+(varNum1+varNum2);break;
+                        case "-":varRes1="El resultado de "+varNum1+" - "+varNum2+ " es: "+(varNum1-varNum2);break;
+                        case "*":varRes1="El resultado de "+varNum1+" * "+varNum2+ " es: "+(varNum1*varNum2);break;
+                        case "/":varRes1="El resultado de "+varNum1+" / "+varNum2+ " es: "+(varNum1/varNum2);break;
+                        default: varRes1="Operacion incorrecta";
+                    }
+                }else{
+                    varRes="Los operadores deben ser valores numericos...";
+                }
+                alert(varRes1);
+            </script>
+        </hgroup>
+    </body>
+</html>

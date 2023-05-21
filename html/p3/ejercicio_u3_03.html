@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- 
+    Nombre: Ivan Ros Padilla
+    Materia: Programacion Web I
+    Fecha: 
+    Descripcion: 
+-->
+<html>
+    <head>
+       <title>Unidad 03 - Ejercicio 03</title>
+       <meta charset="utf-8">
+       <meta name="author" content="Ivan Ros Padilla">
+       <meta name="revised" content="Martes 2 de mayo de 2023">
+       <meta name="description" content="typeOf, String, Number, Boolean, BigInt">
+       <style>
+            .Tit{background-color: black; color: aqua;}
+       </style>
+    </head>
+    <body>
+        <hgroup>
+            <h1 class="Tit">JavaScript - Tipos de Datos</h1>
+            <script>
+                /* 2.2.1.21 Tipos de Datos Primitivos - Tareas*/
+                let varBoolean = Boolean(true);
+                let varNumber = Number(3.141592);
+                let varBigInt = BigInt(3141592);
+                let varString = String("UPSLP");
+                let varUndefined;
+                console.log(typeof varBoolean,varBoolean);
+                console.log(typeof varNumber,varNumber);
+                console.log(typeof varBigInt,varBigInt);
+                console.log(typeof varString,varString);
+                console.log(typeof varUndefined,varUndefined);
+
+                alert("El tipo de la variable varBoolean es :"+typeof(varBoolean)+" y tiene el valor de: "+varBoolean
+                +"\nEl tipo de la variable varNumber es :"+typeof(varNumber)+" y tiene el valor de: "+varNumber
+                +"\nEl tipo de la variable varBigInt es :"+typeof(varBigInt)+" y tiene el valor de: "+varBigInt
+                +"\nEl tipo de la variable varString es :"+typeof(varString)+" y tiene el valor de: "+varString
+                +"\nEl tipo de la variable varUndefined es :"+typeof(varUndefined)+" y tiene el valor de: "+varUndefined);
+                
+                let tempString = String("1234");
+                let tempNumber = Number(tempString);
+                let tempBigInt = BigInt(tempNumber);
+                let tempBoolean = Boolean(tempBigInt);
+                let tempBoolean2 =Boolean(tempBigInt(Number(String(""))));
+
+                alert("tempBoolean es de tipo: "+typeof(tempBoolean)+" y su valor es de: "+tempBoolean+
+                      "\ntempBoolean2 es de tipo: "+typeof(tempBoolean2)+" y su valor es de: "+tempBoolean2);
+
+                let datoString = String("1234");
+                let datoNumber = Number(4321);
+                let datoBigInt = BigInt(5555);
+                let datoBoolean = Boolean(5555);
+
+                alert("String + Number el resultado es: "+typeof(datoString+datoNumber)+
+                "\nString + BigInt el resultado es: "+typeof(datoString+datoBigInt)+
+                "\nString + Boolean el resultado es: "+typeof(datoString+datoBoolean)+
+                "\nNumber + BigInt el resultado es: 'Cannot mix BigInt and other types'"+
+                "\nNumber + Boolean el resultado es: "+typeof(datoNumber+datoBoolean)+
+                "\nBigInt + Boolean el resultado es: 'Cannot mix BigInt and other types'");
+            </script>
+        </hgroup>
+    </body>
+</html>

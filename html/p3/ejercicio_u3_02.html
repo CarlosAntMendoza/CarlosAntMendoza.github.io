@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- 
+    Nombre: Ivan Ros Padilla
+    Materia: Programacion Web I
+    Fecha: 
+    Descripcion: 
+-->
+<html>
+    <head>
+       <title>Unidad 03 - Ejercicio 02</title>
+       <meta charset="utf-8">
+       <meta name="author" content="Ivan Ros Padilla">
+       <meta name="revised" content="">
+       <meta name="description" content="">
+       <style>
+            .Tit{background-color: black; color: aqua;}
+       </style>
+    </head>
+    <body>
+        <hgroup>
+            <h1 class="Tit">JavaScript - Var & Alert</h1>
+            <script>
+                let x=100;
+                let y=50;
+                alert("Valor de X (Main): "+x);
+                alert("Valor de Y (Main): "+y);
+
+                function testfunction(){
+                    let x=1;
+                    let y=5;
+                    alert("Valor de X (Function): "+x);
+                    alert("Valor de Y (Function): "+y);
+                }
+
+                testfunction();
+                alert("Valor de X (Main): "+x);
+                alert("Valor de Y (Main): "+y);
+            </script>
+            <script>
+                /* 2.1.1.19 Variables - Tareas*/
+                let preciorosa=8,preciolirio=10,preciotulipan=2;
+                let numerorosa=70, valorrosa;
+                let numerolirio=50, valorlirio;
+                let numerotulipan=120, valortulipan;
+                let total;
+                function calcula(){
+                    valorrosa=preciorosa*numerorosa;
+                    valorlirio=preciolirio*numerolirio;
+                    valortulipan=preciotulipan*numerotulipan;
+                    total=valorrosa+valorlirio+valortulipan;
+                }
+                function muestra(){
+                    alert("Rosa: precio unitario: "+preciorosa+", cantidad: "+numerorosa+", valor: "+valorrosa+"\nLirio: precio unitario: "+preciolirio+", cantidad: "+numerolirio+", valor: "+valorlirio+"\nTulipan: precio unitario: "+preciotulipan+", cantidad: "+numerotulipan+", valor: "+valortulipan+"\nTotal: "+total);
+                }
+                calcula();
+                muestra();
+                numerorosa=numerorosa-20;
+                numerolirio=numerolirio-30;
+                calcula();
+                muestra();
+            </script>
+            <script>
+                let nombre=[],telefono=[],correo=[];
+                nombre.push("Maxwell Wright");
+                nombre.push("Raja Villarreal");
+                nombre.push("Helen Richards");
+                telefono.push("(0191) 719 6495");
+                telefono.push("0866 398 2895");
+                telefono.push("0800 1111");
+                correo.push("Curabitur.egestas.nunc@nonummyac.co.uk");
+                correo.push("posuere.vulputate@sed.com");
+                correo.push("libero@convallis.edu");
+                console.log("Nombre\t\tTelefono\t\tCorreo");
+                for(let i=0;i<3;i++){
+                    console.log(nombre[i],"\t",telefono[i],"\t",correo[i]);
+                }
+            </script>
+        </hgroup>
+    </body>
+</html>
