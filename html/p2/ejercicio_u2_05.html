@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Unidad 02 - ejercicio 5</title>
+        <meta charset="utf-8">
+        <meta  name "author" content="Carlos">
+        <meta  name "revised" content="jueves, 30 de Marzo de 2023">
+        <meta  name "description" content="Estilo en etiquetas y en encabezados(style)">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+
+        <style type="text/css">
+            p{
+                background-color: black;
+                margin: 5px;
+                margin-right: 10px;
+                margin-left: 15px;
+                margin: 25px;
+                text-align: justify;
+                text-indent: 50px;
+            }
+            #pEspecial{
+                background-color: gray;
+                color: aliceblue;
+                text-transform: uppercase;
+                line-height: 3;
+                font-family: 'Fasthand', cursive;
+            }
+            #cuadro{
+                border: 3px solid black;
+
+            }
+            #cuadro th, #cuadro td{
+                border: 1px dotted gray;
+            }
+            th,td{
+                border: 1px dotted gray;
+            }
+            .alterno{
+                background-color: gray;
+            }
+            h1:hover,h2:hover,td:hover{
+                background-color: #2f4f4f;
+                color: rgb(0,0,0);
+                text-transform: uppercase;
+                text-shadow: blue 5px 5px 10px;
+                font-size: 300%;
+            }
+            ul li:first-child{
+              background-color: greenyellow;
+            }
+            ul li:last-child{
+              background-color: greenyellow;
+            }
+            #mitabla{
+              background-color: aqua;
+              color: black;
+            }
+        </style>
+    </head>
+    <body style="color: gold;">
+        <hgroup style="color: darkgreen;">
+		<h1>CSS</h1>
+		<h2>Estilo en linea</h2>
+		<ul style="color: magenta; list-style-image: url(flecha.png);">
+			<li style="color: red;"><a href="#" style="text-decoration: overline;">Inicio</a></li>
+			<li style="color: blue;"><a href="#">Alumnos</a></li>
+			<li style="color: yellow;"><a href="#" style="text-decoration: overline;">Aspirantes</a></li>
+			<li style="color: green;"><a href="#" style="text-decoration: none;">Docentes</a></li>
+			<li><a href="#" style="text-decoration: line-through;">Administrativos</a></li>
+		</ul>
+	</hgroup>
+	<hgroup>
+		<h1>CSS</h1>
+		<h2>Parrafos</h2>
+            <p style="background-color: blue; text-decoration: line-through;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend, eros et fermentum egestas, tellus leo rutrum mauris, quis varius arcu urna in risus. Morbi in ex ac ipsum ullamcorper porta consequat nec massa. Suspendisse condimentum risus turpis, sed consectetur dui condimentum nec. Aliquam quis ultrices ex. Duis aliquet non lectus nec maximus. Nam nulla mi, aliquet id est nec, maximus gravida ipsum. Morbi luctus mi sem, eu posuere elit mattis eget. Suspendisse potenti. Donec ac nisl sed odio cursus ultricies quis sit amet neque. Etiam ullamcorper bibendum elit, a sagittis est tristique sed. Nullam mi sapien, finibus egestas leo facilisis, feugiat euismod lacus. Maecenas tristique, turpis ut mollis tincidunt, purus augue accumsan nulla, vitae euismod erat neque vel sapien. Fusce at feugiat ligula, at tincidunt sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque ut ligula posuere, commodo ex et, pellentesque lacus.</p>
+            <p id="pEspecial"style="text-decoration: overline;">Integer quis consectetur ipsum. Morbi congue faucibus lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed non accumsan lacus. Fusce finibus ex et quam laoreet, sed pellentesque mauris tincidunt. Aenean et justo imperdiet, egestas libero id, pharetra quam. Sed gravida arcu ut nunc fermentum lobortis quis non libero. Vivamus eu condimentum tortor, porttitor porta orci. Maecenas id tincidunt ex. Integer mattis, tellus sit amet blandit fringilla, metus mi consectetur leo, et faucibus velit turpis sed mi. Phasellus ac rhoncus enim, in tincidunt elit. Vestibulum euismod lectus quis augue placerat, vitae imperdiet nisl feugiat. Etiam feugiat, diam id commodo tincidunt, ipsum diam ornare orci, in imperdiet est nulla sit amet magna. Quisque placerat elementum magna eu ultricies. Quisque dignissim imperdiet erat, in euismod neque.</p>
+            <p style="text-decoration: underline;">In et lectus tellus. Nullam luctus posuere purus, nec lacinia elit vehicula vitae. Phasellus non turpis nisl. Ut ullamcorper mi vitae mauris commodo scelerisque. Nullam iaculis metus nec tempus tincidunt. Vivamus sollicitudin, nibh eu pretium euismod, tortor risus pulvinar ligula, sed venenatis elit lorem eget lacus. Ut odio felis, facilisis quis dui sed, venenatis accumsan orci. Duis condimentum fringilla tempus. Suspendisse pellentesque est at odio volutpat iaculis. Mauris non mi nunc. Etiam ultrices turpis urna, vitae faucibus diam mattis et. Sed porttitor faucibus mi ut ultrices. Etiam pellentesque, dolor eget fermentum accumsan, tortor lorem tempus risus, et luctus tortor mi et arcu. Nullam a placerat lacus, vitae consectetur odio. Vestibulum interdum mi id lobortis molestie. Curabitur semper nec leo vitae hendrerit.</p>
+            <p style="color: lime;text-decoration: none;">Maecenas dui sapien, viverra sed nulla vel, sollicitudin volutpat odio. Duis venenatis arcu quis odio gravida pharetra. In urna diam, accumsan sed dignissim sed, euismod sed est. Nam sagittis pretium augue. Cras semper odio pretium mauris elementum, ut mattis est tincidunt. Praesent sed leo dignissim diam dignissim volutpat. Curabitur non semper elit, id egestas velit. Nullam ut porta mi. Mauris dolor est, dapibus eget ipsum vitae, volutpat interdum ligula. Donec nec laoreet nisl. Donec vitae metus imperdiet, malesuada orci a, placerat diam.</p>
+    </hgroup>
+    <hgroup>
+        <h1>Tabla</h1>
+        <table id="cuadro">
+            <thead>
+              <tr>
+                <th></th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="alterno">
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">2</td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+              <tr class="alterno">
+                <td class="tg-0pky">3</td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">4</td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+              <tr class="alterno">
+                <td class="tg-0lax">5</td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+            </tbody>
+            </table>
+            <h1>Tabla</h1>
+        <table border=5 id="mitabla"style="background-image: url(Redes-sociales.jpg); size: 2px;">
+            <thead>
+              <tr>
+                <th class="tg-0pky"></th>
+                <th class="tg-0pky">A</th>
+                <th class="tg-0pky">B</th>
+                <th class="tg-0pky">C</th>
+                <th class="tg-0pky">D</th>
+                <th class="tg-0lax">E</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">2</td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">3</td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">4</td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">5</td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+            </tbody>
+            </table><br>
+
+
+
+            <table style="background-color: black; color: aqua;">
+              <thead>
+                <tr>
+                  <th class="tg-0pky"></th>
+                  <th class="tg-0pky">#,0,0</th>
+                  <th class="tg-0pky">0,#,0</th>
+                  <th class="tg-0pky">0,0,#</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td >0</td>
+                  <td style="background-color: rgb(32,0,0);"></td>
+                  <td style="background-color: rgb(0,32,0);"></td>
+                  <td style="background-color: rgb(0,0,32);"></td>
+                </tr>
+                <tr>
+                  <td >64</td>
+                  <td style="background-color: rgb(64,0,0);"></td>
+                  <td style="background-color: rgb(0,64,0);"></td>
+                  <td style="background-color: rgb(0,0,64);"></td>
+                </tr>
+                <tr>
+                  <td class="tg-0pky">128</td>
+                  <td style="background-color: rgb(128,0,0);"></td>
+                  <td style="background-color: rgb(0,128,0);"></td>
+                  <td style="background-color: rgb(0,0,128);"></td>
+                </tr>
+                <tr>
+                  <td class="tg-0pky">193</td>
+                  <td style="background-color: rgb(193,0,0);"></td>
+                  <td style="background-color: rgb(0,193,0);"></td>
+                  <td style="background-color: rgb(0,0,193);"></td>
+                </tr>
+                <tr>
+                  <td class="tg-0pky">255</td>
+                  <td style="background-color: rgb(225,0,0);"></td>
+                  <td style="background-color: rgb(0,225,0);"></td>
+                  <td style="background-color: rgb(0,0,225);"></td>
+                </tr>
+              </tbody>
+              </table>
+
+            </table>
+    </hgroup>
+    <hgroup>
+
+        <ul>
+          <li>Primero</li>
+          <li>Segundo</li>
+          <li>Tercero</li>
+          <li>Cuarto</li>
+          <li>Quinto</li>
+        </ul>
+    </hgroup>
+    </body>
+</html>
