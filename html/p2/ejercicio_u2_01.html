@@ -1,0 +1,138 @@
+!DOCTYPE html>
+<!-- 
+    Nombre: Mendoza Martinez Carlos Antonio
+    Materia: Programacion Web 1
+    Fecha: 02/03/2023
+    descripcion: Etiquta de tablas
+-->
+<html lang="es">
+    <head>
+        <title>Unidad 02 - ejercicio 1</title>
+        <meta charset="utf-8">
+        <meta  name "author" content="Carlos">
+        <meta  name "revised" content="Jueves 2 de marzo 2923">
+        <meta  name "description" content="table, tr, th, thead, colspan, rowspan, border">
+    </head>
+    <body>
+        <hgroup>
+            <h1>Tablas</h1>
+            <h2>combinar renglones</h2>
+            <table border="30px">
+                <tr>
+                    <th>No.</th>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido materno</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Juan</td>
+                    <td>&nbsp</td>
+                    <td>Perez</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pedro</td>
+                    <td colspan="2">Lopes</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td rowspan="2">Tomas</td>
+                    <td>Lopez</td>
+                    <td>Perez</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Martines</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td  colspan="2">Zacarias </td>
+                    <td  colspan="2">Martinez</td>
+                </tr>
+            </table>
+
+        </hgroup>
+        <h2>Ejercicio 1</h2>
+        <hgroup>
+            <table border="20">
+                <tr>
+                    <th colspan="4">Tabla n1</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td rowspan="4">C</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">E</td>
+                    <td>F</td>
+                    <td rowspan="3">G</td>
+                </tr>
+                <tr></tr>
+
+            </table>
+        </hgroup>
+        <br>
+        <hgroup>
+            <table border="20">
+            <tr>
+                <th colspan="4">Tabla No.2</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td rowspan="3">5</td>
+                <td>6</td>
+                <td colspan="2">7</td>
+            </tr>
+            <td>8</td>
+            <td>9</td>
+            <td rowspan="2">10</td>
+            </tr>
+            <tr>
+                <td colspan="2">11</td>
+            </tr>
+        </table>
+        <br>
+        <table border="20">
+            <tr>
+                <th colspan="4">Tabla No.3</th>
+            </tr>
+            <tr>
+                <th>&nbsp</th>
+                <th>Comida</th>
+                <th>Hotel</th>
+                <th>Transporte</th>
+            </tr>
+        </table>
+        </hgroup>
+        <hgroup>
+            <h2>Ejercicio No.3</h2>
+            <table border="1">
+                <thead>
+                    <tr><th colspan="4">tabla No.3</th></tr>
+                    <tr><th>&nbsp;</th><th>Comida</th><th>Holel</th><th>Transporte</th></tr>
+                </thead>
+                <tbody>
+                    <tr><th colspan="4">Vallarta</th></tr>
+                    <tr><td>01/jul/2023</td><td>$15</td><td>$120</td><td>ND</td></tr>
+                    <tr><td>02/jul/2023</td><td>$18</td><td>$120</td><td>ND</td></tr>
+                    <tr><td>03/jul/2023</td><td>$25</td><td>$120</td><td>ND</td></tr>
+                    <tr><th colspan="4">Nuevo Vallarta</th></tr>
+                    <tr><td>04/jul/2023</td><td>$10</td><td>$75</td><td>ND</td></tr>
+                    <tr><td>05/jul/2023</td><td>$12</td><td>$75</td><td>ND</td></tr>
+                    <tr></tr>
+                </tbody>
+                <tfoot>
+                    <tr><th>T O T A L</th><th></th></tr>
+                </tfoot>
+            </table>
+        </hgroup>
+    </body>
+</html>
