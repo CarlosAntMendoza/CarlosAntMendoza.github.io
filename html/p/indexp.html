@@ -575,9 +575,164 @@ https://www.statista.com/statistics/471264/iot-number-ofconnected-devices-worldw
                                     <i fa-dove fa-4x tm-post-icon tm-text-primary"></i>
                                     <div class="media-body">
                                         <h1 id="Cuestionario1">Cuestionario</h1>                              
-                                        <p>
-                                            La inteligencia artificial (AI) seguirá evolucionando y expandiéndose en el futuro, con aplicaciones en la automatización de tareas y procesos, la mejora de la atención médica, el desarrollo de robots avanzados y autónomos y el eventual desarrollo de una inteligencia artificial general. La AI tiene el potencial de aumentar la eficiencia y la productividad en diversas industrias, mejorar el diagnóstico y personalizar tratamientos en la atención médica, y expandir la exploración espacial. Además, el avance de la AI plantea cuestiones éticas y sociales importantes.
-                                        </p>
+                                       <body>
+  <h1>Prueba sobre Inteligencia Artificial</h1>
+
+  <form id="quizForm">
+    <h3>Pregunta 1: ¿Qué es la inteligencia artificial?</h3>
+    <label for="q1">
+      <input type="radio" name="q1" value="incorrecto"> Un término para describir a las computadoras
+    </label>
+    <label for="q1">
+      <input type="radio" name="q1" value="correcto"> Una disciplina que busca desarrollar sistemas capaces de realizar tareas inteligentes
+    </label>
+
+    <h3>Pregunta 2: ¿Cuál es un ejemplo de aplicación de inteligencia artificial en la vida cotidiana?</h3>
+    <label for="q2">
+      <input type="radio" name="q2" value="correcto"> Asistentes virtuales como Siri o Alexa
+    </label>
+    <label for="q2">
+      <input type="radio" name="q2" value="incorrecto"> Licuadoras inteligentes
+    </label>
+
+    <h3>Pregunta 3: ¿La inteligencia artificial se refiere a la capacidad de las máquinas para realizar tareas que requieren inteligencia humana?
+</h3>
+    <label for="q3">
+      <input type="radio" name="q3" value="correcto"> La inteligencia artificial se refiere a la capacidad de las máquinas para realizar tareas que requieren inteligencia humana.
+    </label>
+    <label for="q3">
+      <input type="radio" name="q3" value="incorrecto"> La inteligencia artificial solo se utiliza para automatizar tareas simples y rutinarias.
+    </label>
+
+    <h3>Pregunta 4: ¿La inteligencia artificial se limita a la recreación de habilidades cognitivas humanas?
+    </h3>
+    <label for="q4">
+      <input type="radio" name="q4" value="correcto">  La inteligencia artificial puede recrear y superar algunas habilidades cognitivas humanas.
+    <label for="q4">
+      <input type="radio" name="q4" value="incorrecto"> La inteligencia artificial no tiene la capacidad de recrear habilidades cognitivas humanas.
+    </label>
+
+    <h3>Pregunta 5: ¿La inteligencia artificial es capaz de aprender de forma autónoma?</h3>
+    <label for="q5">
+      <input type="radio" name="q5" value="correcto"> La inteligencia artificial puede aprender de forma autónoma a través de algoritmos y datos.
+    </label>
+    <label for="q5">
+      <input type="radio" name="q5" value="incorrecto"> La inteligencia artificial no tiene la capacidad de aprender por sí misma.
+    </label>
+
+    <h3>Pregunta 6: ¿La inteligencia artificial solo se aplica en el ámbito de la tecnología?
+    </h3>
+    <label for="6">
+      <input type="radio" name="q6" value="correcto"> La inteligencia artificial tiene aplicaciones en diversos campos, no solo en tecnología.
+    </label>
+    <label for="q6">
+      <input type="radio" name="q6" value="incorrecto"> La inteligencia artificial se limita únicamente al campo de la tecnología.
+
+
+    </label>
+
+    <h3>Pregunta 7: ¿La inteligencia artificial puede ayudar en el diagnóstico médico?
+    </h3>
+    <label for="q7">
+      <input type="radio" name="q7" value="correcto"> La inteligencia artificial puede ayudar en el diagnóstico médico mediante el análisis de datos y síntomas.
+    </label>
+    <label for="q7">
+      <input type="radio" name="q7" value="incorrecto"> La inteligencia artificial no tiene aplicaciones en el campo de la medicina.
+    </label>
+
+    <h3>Pregunta 8: ¿La inteligencia artificial puede reemplazar completamente a los seres humanos en el trabajo?
+    </h3>
+    <label for="q8">
+      <input type="radio" name="q8" value="correcto"> En algunos casos, la inteligencia artificial puede reemplazar a los seres humanos en ciertas tareas laborales.
+    </label>
+    <label for="q8">
+      <input type="radio" name="q8" value="incorrecto"> La inteligencia artificial nunca podrá reemplazar a los seres humanos en el trabajo.
+    </label>
+
+    <h3>Pregunta 9: ¿La inteligencia artificial plantea preocupaciones éticas y de privacidad?</h3>
+    <label for="q9">
+      <input type="radio" name="q9" value="correcto">  La inteligencia artificial plantea preocupaciones éticas y de privacidad debido al manejo de datos sensibles y la toma de decisiones autónomas.
+    </label>
+    <label for="q9">
+      <input type="radio" name="q9" value="incorrecto"> La inteligencia artificial no tiene implicaciones éticas ni de privacidad.
+    </label>
+
+    <h3>Pregunta 10: ¿La inteligencia artificial ha demostrado superar la inteligencia humana en todas las áreas?</h3>
+    <label for="q10">
+      <input type="radio" name="q10" value="correcto"> En algunos casos, la inteligencia artificial ha superado la inteligencia humana en tareas específicas.
+    </label>
+    <label for="q10">
+      <input type="radio" name="q10" value="incorrecto"> La inteligencia artificial nunca ha superado la inteligencia humana en ninguna área.
+    </label>
+
+    <!-- Repite el patrón para las preguntas 3 a 20 -->
+
+    <br><br>
+    <input type="submit" value="Enviar">
+  </form>
+
+  <div id="resultado"></div>
+
+  <script>
+    document.getElementById('quizForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Evitar el envío del formulario
+
+      // Obtener las respuestas seleccionadas
+      var respuestas = {
+        q1: document.querySelector('input[name="q1"]:checked').value,
+        q2: document.querySelector('input[name="q2"]:checked').value,
+        q3: document.querySelector('input[name="q3"]:checked').value,
+        q4: document.querySelector('input[name="q4"]:checked').value,
+        q5: document.querySelector('input[name="q5"]:checked').value,
+        q6: document.querySelector('input[name="q6"]:checked').value,
+        q7: document.querySelector('input[name="q7"]:checked').value,
+        q8: document.querySelector('input[name="q8"]:checked').value,
+        q9: document.querySelector('input[name="q9"]:checked').value,
+        q10: document.querySelector('input[name="q10"]:checked').value,
+        // Agrega las respuestas para las preguntas 3 a 20 aquí
+      };
+
+      // Calcular la puntuación
+      var puntuacion = 0;
+      if (respuestas.q1 === 'correcto') {
+        puntuacion++;
+      }
+      if (respuestas.q2 === 'correcto') {
+        puntuacion++;
+      }
+      if (respuestas.q3 === 'correcto') {
+        puntuacion++;
+      }
+      if (respuestas.q4 === 'correcto') {
+        puntuacion++;
+      }
+      if (respuestas.q5 === 'correcto') {
+        puntuacion++;
+      }
+      if (respuestas.q6 === 'correcto') {
+        puntuacion++;
+      }
+      if (respuestas.q7 === 'correcto') {
+        puntuacion++;
+      }
+      if (respuestas.q8 === 'correcto') {
+        puntuacion++;
+      }
+      if (respuestas.q9 === 'correcto') {
+        puntuacion++;
+      }
+      if (respuestas.q10 === 'correcto') {
+        puntuacion++;
+      }
+      // Agrega las comprobaciones de respuestas correctas para las preguntas 3 a 20 aquí
+
+      // Mostrar los resultados
+      var resultadoDiv = document.getElementById('resultado');
+      resultadoDiv.innerHTML = '<h2>Resultado:</h2>';
+      resultadoDiv.innerHTML += '<p>Puntuación: ' + puntuacion + ' de 10</p>';
+    });
+  </script>
+</body>
                                     </div>                                    
                                 </div>			     
 							     
